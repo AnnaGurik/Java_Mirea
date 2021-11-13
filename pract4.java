@@ -1,18 +1,14 @@
-package com.company; // для IntelliJ
+package com.company; 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-// можно было не создавать отдельно рамку и вписывать имя объекта везде
-// можно было рядом с Main написать extends JFrame и всё
-
 class Main{
 
-    JFrame frame = new JFrame("Khachatryan_pr4"); // рамка
+    JFrame frame = new JFrame("Khachatryan_pr4"); // рама
 
     JButton milan = new JButton("AC Milan"); // кнопка
     JButton madrid = new JButton("Real Madrid"); // кнопка
-    // их функционал ниже
 
     //счётчики
     int milan_count = 0;
