@@ -13,7 +13,6 @@ public class Main {
         System.out.println("\n");
     }
 
-    // 1st task
     public static void sequence1(int num) {
         if(num>1) {
             sequence1(num-1);
@@ -24,7 +23,6 @@ public class Main {
             System.out.print(1 + " ");
     }
 
-    // 2nd task
     public static void sequence2(int num) {
         if (num > 1) {
             sequence2(num - 1);
@@ -33,7 +31,6 @@ public class Main {
         else System.out.print(1 + " ");
     }
     
-    //5th task
     public static int sum(int num)
     {
         if(num < 10)
