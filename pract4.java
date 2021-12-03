@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 class Main{
 
-    JFrame frame = new JFrame("Khachatryan_pr4"); // рама
+    JFrame frame = new JFrame("Guryanova_pr4"); // рама
 
     JButton milan = new JButton("AC Milan"); // кнопка
     JButton madrid = new JButton("Real Madrid"); // кнопка
