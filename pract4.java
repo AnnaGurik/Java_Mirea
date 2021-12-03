@@ -1,12 +1,11 @@
-package com.company; 
+package com.metanit;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 class Main{
 
-    JFrame frame = new JFrame("Guryanova_pr4"); // рама
-
+    JFrame frame = new JFrame("Guryanova"); // рамка
     JButton milan = new JButton("AC Milan"); // кнопка
     JButton madrid = new JButton("Real Madrid"); // кнопка
 
@@ -18,7 +17,7 @@ class Main{
     JLabel Result = new JLabel("Result: 0 X 0");
     JLabel Last_Scorer = new JLabel("Last Scorer: N/A");
     Label Winner = new Label("Winner: DRAW");
-
+    // создание шрифтов
     Font font1 = new Font("Times new roman",Font.BOLD,20);
     Font font2 = new Font("Serif",Font.BOLD,20);
 
@@ -26,10 +25,10 @@ class Main{
         // установка размеров рамки
         frame.setSize(240, 240);
 
-        ////
+        ////выход
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
-        ////
+        ////метод Последовательное расположение компонентов
 
         // установка шрифтов, созданных ранее
         milan.setFont(font1);
@@ -38,23 +37,23 @@ class Main{
         Last_Scorer.setFont(font1);
         Winner.setFont(font2);
 
-        // комбинация, благодяра которой кнопка становится красивей
+        // установка яных размеров рамки
         milan.setBorderPainted(false);
         milan.setFocusPainted(false);
 
         // фон и передний план
-        milan.setBackground(Color.RED);
+        milan.setBackground(Color.GREEN);
         milan.setForeground(Color.BLACK);
 
-        // комбинация, благодяра которой кнопка становится красивей
+        //
         madrid.setBorderPainted(false);
         madrid.setFocusPainted(false);
 
         // фон и передний план
         madrid.setBackground(Color.WHITE);
-        madrid.setForeground(Color.decode("0x03009c"));
+        madrid.setForeground(Color.decode("#C46AFF"));
 
-        // добавляем наши виджеты
+        // добавляем виджеты
         frame.add(milan);
         frame.add(madrid);
         frame.add(Result);
@@ -65,8 +64,6 @@ class Main{
 
         milan.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
-
                 milan_count++;
                 Result.setText("Result: " + milan_count + " X " + madrid_count);
                 Last_Scorer.setText("Last Scorer: AC Milan");
